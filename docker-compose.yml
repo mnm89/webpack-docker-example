@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  #webpack
+  webpack:
+    build: .
+    volumes:
+      - ./public:/bindmount/public:rw
+      - ./src:/bindmount/src:rw
+
